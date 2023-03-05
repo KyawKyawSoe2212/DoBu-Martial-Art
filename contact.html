@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+       
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"></script>
+    
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    
+    <title>Contact</title>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="index.html">
+            <img src="imgs/dobu_logo.png" alt="Avatar Logo" style="width:55px;" class="rounded-pill">
+        </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="classes.html" style="color: black;">Classes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="membership.html" style="color: black;">Membership</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="specialCourse.html" style="color: black;">SpecialCourse</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="schedule.html" style="color: black;">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="instructors.html" style="color: black;">Instructors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="aboutUs.html" style="color: black;">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" style="color: black;">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav><br><br>
+    <!--Contact-->
+    <div class="jumbotron" id="jum1">
+        <div class="row">
+            <div class="col-sm-6">
+                <img class="rounded-lg" src="imgs/contact.png" alt="phone calling" id="contact-img">
+            </div>
+            <div class="col-sm-6">
+                <h2>Contact us</h2>
+                <hr>
+                <p><i class="fa-solid fa-phone"></i><b> Call us: </b>09-125427644</p>
+                <p><i class="fa-solid fa-envelope"></i><b> Mail: </b>DoBuMartialArt@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i><b> Location: </b> Yangon,Hlaing</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h5 style="text-align: center;"><u>Customer Support</u></h5><br>
+                <div class="jumbotron" id="jum2">
+                    <form action="/action_page.php" class="was-validated">
+                        <div class="form-group">
+                            <label for="uname">Username:</label>
+                            <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname"
+                                required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="mnum">Mobile Number:</label>
+                            <input type="number" class="form-control" id="mnum"
+                                placeholder="Enter mobile number (optional)" name="mnum">
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email"
+                                required>
+                            <div class="valid-feedback">Valid.</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Comment:</label>
+                            <textarea class="form-control" rows="5" id="comment" placeholder="Message me..."
+                                name="comment"></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember"> Remember me.
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Check this checkbox to continue.</div>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-sm-6">
+                <h5 style="text-align: center;"><u>Center Landmark</u></h5><br>
+                <p><iframe id="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30548.051192031562!2d96.09808373955079!3d16.85082599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c194e7ee58f64d%3A0x6e974e7cb775f1a9!2z4YCc4YC-4YCt4YCv4YCE4YC6IOGAmeGAvOGAreGAr-GAt-GAlOGAmuGAuiwg4YCb4YCU4YC64YCA4YCv4YCU4YC6!5e0!3m2!1smy!2smm!4v1676394935926!5m2!1smy!2smm"
+                        width="600" height="450" style="border:solid;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>Dobu Martial Art</h4>
+                    <p class="text-justify" style="font-size: small;">Train your Body and mind at DoBu.</p>
+                </div>
+                <div class="col-sm-3">
+                    <h4>About</h4>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="aboutUs.html">About us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="classes.html">Classes</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                        <li><a href="sitemap.html">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12">
+                    <hr>
+                    <h4>Social media</h4>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/" target="_blank"> <i class="fa-brands fa-facebook fa-2x margin"></i></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram fa-2x margin"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCX674BUbomzBCakbb75lhfA?view_as=subscriber"
+                                target="_blank"><i class="fab fa-youtube fa-2x margin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
